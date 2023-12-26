@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なレ掲</title>
+</head>
+<body bgcolor="#dfdfdf">
+    <h1 style="color:red">{{ threadtitle }}</h1>
+    <a href="/bbs/{{ bbs }}">■戻る</a>　
+    <a href="/">■なレ掲に戻る</a>
+    <hr>
+    <!-- messages -->
+
+    <form action="/post/{{ bbs }}/{{ thread }}/" method="post">
+        <input type="submit" value="投稿">お名前:<input name="username">
+
+      ID:<input name="ids"><br>
+        <textarea name="message" style="width: 401px; height: 160px;"></textarea>
+    </form>
+    <hr>
+    GADAI★
+</body>
+</html>
